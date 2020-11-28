@@ -1,0 +1,70 @@
+// Forms
+// 
+// Base - Protocol core contains some basic form styles which include:
+// * normalization of display between browsers
+// * styles for fieldset, legend, input, select
+// * utility classes for errors and error messages
+//
+//  Depending on what you're doing this might be enough. For more complex layouts, status information, and custom UI options see the form components.
+
+
+// Text Input
+// Form inputs should always (or almost always) be paired with a label element.
+
+
+
+// Input with Placeholder
+// Field placeholders should show an example of the expected input, such as suggested search terms or a demonstration of a correctly formatted email address.
+
+
+
+// Other Input Fields
+//
+// * file
+// * search
+// * email
+// * date
+// * password
+
+
+
+// Checkboxes
+// Checkboxes represent a set of options where multiple selections are allowed.
+
+
+
+// Radio Buttons
+// Radio buttons represent a set of options where only one may be selected.
+
+
+
+// Select
+
+
+
+// Textarea
+
+
+
+// Fieldset with Legend
+// Use fieldset to group related fields together. Include a legend as a title.
+
+
+
+// Title
+// There are two classes for styling titles (aka headings) that appear in forms
+
+
+
+// Field Notes
+// A note to provide added context or instructions to supplement the field label. It should be inside the label element, after the label text.
+
+
+
+// Required Field
+// Inputs that are required to submit the form should carry both the required and aria-required attributes and their labels should include a readable note.
+
+
+
+// Error List
+// For long forms when there is an error display a summary list of form errors at the top of the form.
