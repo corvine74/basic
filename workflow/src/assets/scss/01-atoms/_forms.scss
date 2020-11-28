@@ -1,70 +1,149 @@
-// Forms
-// 
-// Base - Protocol core contains some basic form styles which include:
-// * normalization of display between browsers
-// * styles for fieldset, legend, input, select
-// * utility classes for errors and error messages
-//
-//  Depending on what you're doing this might be enough. For more complex layouts, status information, and custom UI options see the form components.
+/* ========== 
+	FORMS 
+	========== */
 
+/* 
+	Base - Protocol core contains some basic form styles which include:
+		* normalization of display between browsers
+		* styles for fieldset, legend, input, select
+		* utility classes for errors and error messages
+	
+	Depending on what you're doing this might be enough. For more complex layouts, status information, and custom UI options see the form components.
+*/
 
-// Text Input
-// Form inputs should always (or almost always) be paired with a label element.
-
-
-
-// Input with Placeholder
-// Field placeholders should show an example of the expected input, such as suggested search terms or a demonstration of a correctly formatted email address.
-
-
-
-// Other Input Fields
-//
-// * file
-// * search
-// * email
-// * date
-// * password
+/* ==========
+	TEXT INPUT 
+	========== */
+	/*
+		Form inputs should always (or almost always) be paired with a label element.
+		* MDN <input> -- https://developer.mozilla.org/docs/Web/HTML/Element/input
+		* MDN <label> -- https://developer.mozilla.org/docs/Web/HTML/Element/label
+	*/
 
 
 
-// Checkboxes
-// Checkboxes represent a set of options where multiple selections are allowed.
+/* ==========
+	INPUT WITH PLACEHOLDER 
+	========== */
+	/*
+		Field placeholders should show an example of the expected input, such as suggested search terms or a demonstration of a correctly formatted email address.
+	*/
 
 
 
-// Radio Buttons
-// Radio buttons represent a set of options where only one may be selected.
+/* ========== 
+	CHECKBOXES 
+	========== */
+	/*
+		Checkboxes represent a set of options where multiple selections are allowed.
+		
+		Tips
+			* Wrap the label element around both the control and its text label. This gives a bigger target for clicking.
+			* Use the mzp-u-inline class to override the base block-level label styling.
+			* Use a single checkbox for a binary choice (such as a yes or no question) rather than two radio buttons, especially if the field isn’t required. A checked radio button can’t be unchecked, whereas a single checkbox behaves as a switch to let a user toggle between the two states (you can uncheck a checked checkbox).
+	*/
 
 
 
-// Select
+/* ========== 
+	RADIO BUTTONS 
+	========== */
+	/*
+		Radio buttons represent a set of options where only one may be selected.
+	
+		Tips
+			* Wrap the label element around both the control and its text label. This gives a bigger target for clicking.
+			* Use the mzp-u-inline class to override the base block-level label styling.
+	*/
 
 
 
-// Textarea
+/* ==========
+	SELECT 
+	========== */
+	/*
+		* MDN <select> -- https://developer.mozilla.org/docs/Web/HTML/Element/select
+		* MDN <option> -- https://developer.mozilla.org/docs/Web/HTML/Element/option
+	*/
 
 
 
-// Fieldset with Legend
-// Use fieldset to group related fields together. Include a legend as a title.
+/* ==========
+	TEXTAREA 
+	========== */
+	/*
+		* MDN <textarea> -- https://developer.mozilla.org/docs/Web/HTML/Element/textarea
+	*/
 
 
 
-// Title
-// There are two classes for styling titles (aka headings) that appear in forms
+/* ==========
+	OTHER INPUT FIELDS 
+	========== */
+	/* 
+		* file -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+		* search -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search
+		* email -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
+		* date -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+		* tel -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel
+		* number -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
+		* password -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password
+		* datetime-local -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
+		* range -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range
+	*/
 
 
 
-// Field Notes
-// A note to provide added context or instructions to supplement the field label. It should be inside the label element, after the label text.
+/* ==========
+	FIELDSET WITH LEGEND 
+	========== */
+	/*
+		Use fieldset to group related fields together. Include a legend as a title.
+			* MDN <fieldset> -- https://developer.mozilla.org/docs/Web/HTML/Element/fieldset
+			* MDN <legend> -- https://developer.mozilla.org/docs/Web/HTML/Element/legend
+
+		Tips
+			Use meaningful elements like lists and paragraphs to give forms structure.
+	*/
 
 
 
-// Required Field
-// Inputs that are required to submit the form should carry both the required and aria-required attributes and their labels should include a readable note.
+/* ==========
+	TITLE 
+	========== */
+	/*
+		There are two classes for styling titles (aka headings) that appear in forms.
+
+		Tips
+			* Make sure the html content is semantic and communicates the heirarchy before you apply these classes
+			* You will get the subtitle styles automatically when using a <legend> element
+	*/
 
 
 
-// Error List
-// For long forms when there is an error display a summary list of form errors at the top of the form.
+/* ==========
+	FIELD NOTES 
+	========== */
+	/*
+		A note to provide added context or instructions to supplement the field label. It should be inside the label element, after the label text.
+	*/
+
+
+
+/* ==========
+	REQUIRED FIELD 
+	========== */
+	/* 
+		Inputs that are required to submit the form should carry both the required and aria-required attributes and their labels should include a readable note.
+
+		* WAI required-field -- https://www.w3.org/TR/wai-aria/#aria-required
+	*/
+
+
+
+/* ==========
+	ERROR LIST 
+	========== */
+	/*
+		For long forms when there is an error display a summary list of form errors at the top of the form.
+	*/
