@@ -1,0 +1,29 @@
+// Forms
+
+
+// Custom Checkboxes and Radio Buttons
+// These are available with special code that needs to be precisely used. The code is the same for checkboxes or radio buttons, the display changes based on the type on the input.
+
+
+
+// Form Fields
+// The field component is a wrapper around a field-label and field-control. It can contain an optional field-info.
+//
+// <label> and <input> elements inherit some styles without having these classes applied. The classes will ensure the right spacing, especially when using other layout options.
+
+
+
+// Form Header & Form Footer
+// The form header and footer components can be used to put some distance between the form components and their setup and submission content.
+
+
+
+// Field Sets
+// Field sets group form fields that are related thematically. Field sets will often correspond to the fieldset element but not always.
+
+
+
+// Message
+// More useful for supplementary error messages, not things that would need to display before user interaction.
+// 
+// Error messages should be short and simple. They should indicate what the user needs to do to resolve the error, not simply state that an error occurred. Bad example: “Invalid e-mail.” Good example: “Provide a complete e-mail address, like ‘yourname@example.com’.”
