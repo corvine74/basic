@@ -1,6 +1,17 @@
+/* ========================================
+  HACKS
+  ========================================= */
 
-// Clear floats
-@mixin clearfix {
+/*
+	These mixin cover scenerios where support is needed for older 
+	code standards or older browsers.
+*/
+
+/* ==========
+	Clear floats
+	=========== */
+
+	@mixin clearfix {
 	zoom: 1;
 
 	&:after {
@@ -12,8 +23,11 @@
 	}
 }
 
-// Inline block hack for pages that still need to support old IE.
-@mixin inline-block {
+/* ==========
+	Inline block hack for pages that still need to support old IE.
+	========== */
+
+	@mixin inline-block {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;

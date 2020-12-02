@@ -1,6 +1,12 @@
+/* ========================================
+  GRID
+  ========================================= */
 
-// Mixins for CSS grid legacy prefixed properties
-// https://bugzilla.mozilla.org/show_bug.cgi?id=1398482
+/* 
+	Mixins for CSS grid legacy prefixed properties
+	https://bugzilla.mozilla.org/show_bug.cgi?id=1398482
+*/
+
 @mixin grid-gap($value: inherit) {
 	grid-gap: $value;
 	gap: $value;

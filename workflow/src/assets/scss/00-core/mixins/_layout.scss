@@ -1,5 +1,11 @@
+/* ========================================
+  LAYOUT
+  ========================================= */
 
-// Multiple columns
+/* ==========
+	Multiple columns
+	========== */
+	
 @mixin multi-column($width: auto, $count: auto, $gap: normal) {
 	-webkit-column-width: $width;
 		 -moz-column-width: $width;

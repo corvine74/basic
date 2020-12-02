@@ -1,5 +1,11 @@
+/* ========================================
+  VISIBILITY
+  ========================================= */
 
-// Hide an element visually, but not from screen readers
+/* ==========
+	Hide an element visually, but not from screen readers
+	========== */
+
 @mixin visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -12,7 +18,10 @@
 	width: 1px;
 }
 
-// Hide an element completely, including from screen readers
+/* ==========
+	Hide an element completely, including from screen readers
+	========== */
+	
 @mixin hidden {
 	display: none;
 }
