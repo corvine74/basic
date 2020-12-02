@@ -6,13 +6,16 @@
   This is a color palette builder which uses defined color tokens. This eliminates the need to define color shades within the color tokens.
 */
 
+@import '../tokens/color.scss';
 
-@import '../tokens/color.scss'
 
-//  Create shades of each color and return values as a map
+/*
+  Create shades of each color and return values as a map
+*/  
+
 @function color-map($color, $values) {
   $base:      $values;
-  $b50: mix(white, $values, 99%);
+  $b50:  mix(white, $values, 99%);
   $b100: mix(white, $values, 88%);
   $b200: mix(white, $values, 77%);
   $b300: mix(white, $values, 66%);
@@ -24,7 +27,7 @@
   $b900: mix(white, $values, 0%);
 
   $color-shades: (
-    #{$color}#{50}: $b50,
+    #{$color}#{50}:  $b50,
     #{$color}#{100}: $b100,
     #{$color}#{200}: $b200,
     #{$color}#{300}: $b300,
@@ -39,7 +42,9 @@
   @return $color-shades;
 }
 
-//  Set up master map for all colors
+/*
+  Set up master map for all colors
+*/ 
 @function color-maps($colors) {
   $color-map: ();
 
@@ -51,10 +56,14 @@
   @return $color-map;
 }
 
-//  Initiate maps function to build maps
+/*
+  Initiate maps function to build maps
+*/ 
 $color-map: color-maps($colors);
 
-//  Create a mixin to better call colors from map
+/*
+  Create a mixin to better call colors from map
+*/  
 @function color($color, $shade) {
   @return map-get($color-map, #{$color}#{$shade});
 }
