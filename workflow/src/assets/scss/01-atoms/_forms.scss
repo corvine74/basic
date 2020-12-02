@@ -12,138 +12,77 @@
 */
 
 /* ==========
-	TEXT INPUT 
+	RESET
 	========== */
-	/*
-		Form inputs should always (or almost always) be paired with a label element.
-		* MDN <input> -- https://developer.mozilla.org/docs/Web/HTML/Element/input
-		* MDN <label> -- https://developer.mozilla.org/docs/Web/HTML/Element/label
-	*/
+
+form,
+fieldset,
+legend {
+		border: 0;
+		margin: 0;
+		padding: 0;
+}
+
+//  1. Correct the text wrapping in Edge and IE.
+//  2. Correct the color inheritance from `fieldset` elements in IE.
+//  3. Remove the padding so developers are not caught out when they zero out
+//    `fieldset` elements in all browsers.
+legend {
+		box-sizing: border-box; // 1
+		color: inherit; // 2
+		display: table; // 1
+		max-width: 100%; // 1
+		padding: 0; // 3
+		white-space: normal; // 1
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+		@include font-base;
+		@include text-body-md;
+		line-height: 1.25;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+		-webkit-appearance: button;
+}
+
+// Remove the default vertical scrollbar in IE 10+.
+textarea {
+		overflow: auto;
+}
+
+// 1. Correct the odd appearance in Chrome and Safari.
+// 2. Correct the outline style in Safari.
+[type="search"] {
+		-webkit-appearance: textfield; // 1
+		outline-offset: -2px; // 2
+}
+
+// Remove the inner padding in Chrome and Safari on macOS.
+[type="search"]::-webkit-search-decoration {
+		-webkit-appearance: none;
+}
+
+// 1. Correct the inability to style clickable types in iOS and Safari.
+// 2. Change font properties to `inherit` in Safari.
+::-webkit-file-upload-button {
+		-webkit-appearance: button; // 1
+		font: inherit; // 2
+}
 
 
-
-/* ==========
-	INPUT WITH PLACEHOLDER 
-	========== */
-	/*
-		Field placeholders should show an example of the expected input, such as suggested search terms or a demonstration of a correctly formatted email address.
-	*/
-
-
-
-/* ========== 
-	CHECKBOXES 
-	========== */
-	/*
-		Checkboxes represent a set of options where multiple selections are allowed.
-		
-		Tips
-			* Wrap the label element around both the control and its text label. This gives a bigger target for clicking.
-			* Use the mzp-u-inline class to override the base block-level label styling.
-			* Use a single checkbox for a binary choice (such as a yes or no question) rather than two radio buttons, especially if the field isn’t required. A checked radio button can’t be unchecked, whereas a single checkbox behaves as a switch to let a user toggle between the two states (you can uncheck a checked checkbox).
-	*/
-
-
-
-/* ========== 
-	RADIO BUTTONS 
-	========== */
-	/*
-		Radio buttons represent a set of options where only one may be selected.
+// 1. Add the correct box sizing in IE 10.
+// 2. Remove the padding in IE 10.
+[type="checkbox"],
+[type="radio"] {
+		box-sizing: border-box; // 1
+		padding: 0; // 2
+}
 	
-		Tips
-			* Wrap the label element around both the control and its text label. This gives a bigger target for clicking.
-			* Use the mzp-u-inline class to override the base block-level label styling.
-	*/
-
-
-
-/* ==========
-	SELECT 
-	========== */
-	/*
-		* MDN <select> -- https://developer.mozilla.org/docs/Web/HTML/Element/select
-		* MDN <option> -- https://developer.mozilla.org/docs/Web/HTML/Element/option
-	*/
-
-
-
-/* ==========
-	TEXTAREA 
-	========== */
-	/*
-		* MDN <textarea> -- https://developer.mozilla.org/docs/Web/HTML/Element/textarea
-	*/
-
-
-
-/* ==========
-	OTHER INPUT FIELDS 
-	========== */
-	/* 
-		* file -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
-		* search -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search
-		* email -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
-		* date -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
-		* tel -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel
-		* number -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
-		* password -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password
-		* datetime-local -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
-		* range -- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range
-	*/
-
-
-
-/* ==========
-	FIELDSET WITH LEGEND 
-	========== */
-	/*
-		Use fieldset to group related fields together. Include a legend as a title.
-			* MDN <fieldset> -- https://developer.mozilla.org/docs/Web/HTML/Element/fieldset
-			* MDN <legend> -- https://developer.mozilla.org/docs/Web/HTML/Element/legend
-
-		Tips
-			Use meaningful elements like lists and paragraphs to give forms structure.
-	*/
-
-
-
-/* ==========
-	TITLE 
-	========== */
-	/*
-		There are two classes for styling titles (aka headings) that appear in forms.
-
-		Tips
-			* Make sure the html content is semantic and communicates the heirarchy before you apply these classes
-			* You will get the subtitle styles automatically when using a <legend> element
-	*/
-
-
-
-/* ==========
-	FIELD NOTES 
-	========== */
-	/*
-		A note to provide added context or instructions to supplement the field label. It should be inside the label element, after the label text.
-	*/
-
-
-
-/* ==========
-	REQUIRED FIELD 
-	========== */
-	/* 
-		Inputs that are required to submit the form should carry both the required and aria-required attributes and their labels should include a readable note.
-
-		* WAI required-field -- https://www.w3.org/TR/wai-aria/#aria-required
-	*/
-
-
-
-/* ==========
-	ERROR LIST 
-	========== */
-	/*
-		For long forms when there is an error display a summary list of form errors at the top of the form.
-	*/
