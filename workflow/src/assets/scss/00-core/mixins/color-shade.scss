@@ -1,0 +1,51 @@
+@import '../tokens/color.scss'
+
+//  Create shades of each color and return values as a map
+@function color-map($color, $values) {
+  $base:      $values;
+  $b50: mix(white, $values, 99%);
+  $b100: mix(white, $values, 88%);
+  $b200: mix(white, $values, 77%);
+  $b300: mix(white, $values, 66%);
+  $b400: mix(white, $values, 55%);
+  $b500: mix(white, $values, 44%);
+  $b600: mix(white, $values, 33%);
+  $b700: mix(white, $values, 22%);
+  $b800: mix(white, $values, 11%);
+  $b900: mix(white, $values, 0%);
+
+  $color-shades: (
+    #{$color}#{50}: $b50,
+    #{$color}#{100}: $b100,
+    #{$color}#{200}: $b200,
+    #{$color}#{300}: $b300,
+    #{$color}#{400}: $b400,
+    #{$color}#{500}: $b500,
+    #{$color}#{600}: $b600,
+    #{$color}#{700}: $b700,
+    #{$color}#{800}: $b800,
+    #{$color}#{900}: $b900
+  );
+
+  @return $color-shades;
+}
+
+//  Set up master map for all colors
+@function color-maps($colors) {
+  $color-map: ();
+
+  @each $color, $value in $colors {
+    $map: (color-map($color, $value));
+    $color-map: map-merge($color-map, $map);
+  }
+
+  @return $color-map;
+}
+
+//  Initiate maps function to build maps
+$color-map: color-maps($colors);
+
+//  Create a mixin to better call colors from map
+@function color($color, $shade) {
+  @return map-get($color-map, #{$color}#{$shade});
+}
