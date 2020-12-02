@@ -1,3 +1,12 @@
+/* ========================================
+  COLOR PALETTE
+  ========================================= */
+
+/*
+  This is a color palette builder which uses defined color tokens. This eliminates the need to define color shades within the color tokens.
+*/
+
+
 @import '../tokens/color.scss'
 
 //  Create shades of each color and return values as a map
