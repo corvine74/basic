@@ -1,26 +1,10 @@
-//* -------------------------------------------------------------------------- */
-// Type scale
+/// Import the default config as the fallback for if
+/// the user hasn't yet set a config for their project
+@import 'tokens/config';
 
-// Protocol uses a modular type scale with a range of predefined
-// font sizes (to avoid sizing text willy nilly). Scale sizes are
-// defined as part of the brand theme.
+/// Set default feature flags
+$outputTokenCSS: true !default;
 
-// There are two different scales available: a standard scale with
-// large headings, appropriate for general websites (like marketing
-// sites, blogs, etc) and a condensed scale with smaller sizes more
-// suitable for web applications.
-
-// You can override this variable in other style sheets by setting a
-// different value *before* the lib file import.
-
-// Accepted values:
-//     'standard'
-//     'condensed'
-
-$type-scale: 'standard' !default;
-
-
-// Import all the things!
-@import 'tokens/index.scss';
 @import 'functions';
 @import 'mixins';
+@import 'process';
