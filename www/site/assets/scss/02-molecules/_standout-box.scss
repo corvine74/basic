@@ -1,0 +1,25 @@
+/* ==========
+	STANDOUT BOX
+	========== */
+
+	/* 
+		A visual wrapper used around some CTAs and forms in both marketing and application contexts.
+
+			* Demo page with various content -- https://protocol.mozilla.org/demos/emphasis-box.html
+
+		Notes
+			* The Emphasis Box is a visual wrapper used around some CTAs and forms in both marketing and application contexts. It's defined by a contrasting background, large border radius (rounded corners) and drop shadow which provides visual separation from the rest of the page and draws the user’s attention to its contents.
+			* The emphasis box is a block-level layout component. Due to its rounded corners and drop shadow, it should fit within the defined width of your application or website (as opposed to being edge-to-edge within a browser window).
+			* Within an Emphasis Box you have a great deal of layout freedom. In general, consider using either a single column of left-aligned or center-aligned text for narrow boxes, or flexing your content so that text appears in two columns in wider boxes (perhaps with text on one side and an image on the other).
+			* Use an emphasis box:
+				* When you need to frame a key form or interactive area on a page.
+				* When you need to call out one key CTA among several on a page.
+			* A dark theme is also available using the theme class mzp-t-dark.
+
+		Tips
+			* In smaller, responsive views, make sure your layout accommodates some margins around the emphasis box.
+			* Try to limit text to around 70 characters per line. The emphasis box doesn't have any internal layout of its own so you may need to limit its total width or add some other inner container.
+	*/
+
+
+

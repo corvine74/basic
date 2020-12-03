@@ -1,0 +1,49 @@
+/* ==========
+	LINKS
+	========== */
+
+/* ==========
+	Text Links
+	========== */
+	/* 
+		Just your standard inline text link with no modifiers. Font family, size, weight, etc are inherited from the parent.
+
+		Notes
+			Links can appear in a number of states: unvisited, visited, hovered, active, and focused. It’s hard to display these states visually while keeping this component accurate to reality, so we’ve set up a separate demo page to show all the link states in one place.
+
+		Tips
+			* Keep link text short, just a few words.
+			* The text in a link should be descriptive of the destination or offer some clear indication of where the link leads.
+			*You can use the light-links mixin for dark background where links require higher text contrast.
+	*/
+
+
+
+/* ==========
+	CALL TO ACTION LINK
+	========== */
+	/* 
+		A call to action link that can be used in number of different components, such as a billboard or card.
+	*/
+
+
+	
+/* ==========
+	ZAP
+	========== */
+	/* 
+		The zap is a florish that can be added to Firefox themed sites to give emphasis to one word.
+
+		Notes
+			For localization purposes the theme class for the zap goes on the parent element and the zap is applied to any child <strong> tags.
+
+			Add the class mzp-has-zap-1, and change the number 1 to the number of the zap you want. There are 18 zaps to choose from.
+
+			If you want to apply the zap in a different manner, or use a zap that's not one of the default ones you can use the zap('zap.svg') mixin.
+
+		Tips
+			* zaps cannot break to a new line, so they should only be put on one word
+			* the zap is flexible! it can be used on words of various sizes
+			* zaps will work best on large text
+			* zaps with a lot of detail don't work as well on short words
+	*/

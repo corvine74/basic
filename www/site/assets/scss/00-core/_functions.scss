@@ -1,0 +1,28 @@
+@import 'functions/get-color';
+@import 'functions/get-config-value';
+@import 'functions/get-size';
+
+/* ==========
+	CREATE REM VALUE
+	========== */
+
+/* 
+	Convert pixel units to rems, assuming a 16px base size
+	
+	Usage:
+		remCalc(24px)
+*/
+
+@function remCalc($pixels) {
+	$rems: $pixels / 16px;
+	@return #{$rems}rem;
+}
+
+/* ========================================
+  FONT SIZE
+  ========================================= */
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: remCalc($size);
+}

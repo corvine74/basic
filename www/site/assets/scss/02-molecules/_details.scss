@@ -1,0 +1,49 @@
+/* ========== 
+	DETAILS 
+	========== */
+
+
+/* ========== 
+	DETAILS/SUMMARY ELEMENTS 
+	========== */
+
+	/* 
+		Native details and summary support.
+
+		Notes
+			* Includes polyfill for older browsers
+			* Use with headings to convey hierarchy if appropriate.
+	*/
+
+
+
+/* ========== 
+	COMPONENT 
+	========== */
+
+	/* 
+		Add .mzp-c-details to a section to collapse contents in to their headings.
+
+		Notes
+			* Assumes all content following a heading is intended to be hidden.
+			* Only collapses headings highest in the hierarchy.
+	*/
+
+
+
+/* ========== 
+	CUSTOM EXPAND AND COLLAPSE 
+	========== */
+
+	/* 
+		The functions driving the details and summary component can be called independently.
+
+		Notes
+			* Styling must be provided seperately
+			* Details can be initialized using Mzp.Details.init(selector, options), where options is an * * Object with the following properties:
+				* onDetailsOpen [Function] callback when a details is opened (optional).
+				* onDetailsClosed [Function] callback when a details is closed (optional).
+	*/
+
+
+

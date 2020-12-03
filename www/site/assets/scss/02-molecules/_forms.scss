@@ -1,0 +1,84 @@
+/* ==========
+	FORMS 
+	========== */
+
+
+/* ==========
+	CUSTOM CHECKBOXES AND RADIO BUTTONS 
+	========== */
+		
+	/* 
+		These are available with special code that needs to be precisely used. The code is the same for checkboxes or radio buttons, the display changes based on the type on the input.
+
+			* Formatting and Layout Options -- https://protocol.mozilla.org/demos/forms/choices.html
+		
+		Notes
+			* use mzp-c-choice-control for both checkboxes and radio buttons
+			* the input must be before the label in source order
+	*/
+
+
+
+/* ==========
+	FORM FIELDS 
+	========== */
+	
+	/* 
+		The field component is a wrapper around a field-label and field-control. It can contain an optional field-info.
+
+		<label> and <input> elements inherit some styles without having these classes applied. The classes will ensure the right spacing, especially when using other layout options.
+
+			* Long Form -- https://protocol.mozilla.org/demos/forms/long.html
+		
+		Tips
+			* These layout features are most useful in larger forms. If you have a small form like a login they're optional.
+	*/
+
+
+
+/* ==========
+	FORM HEADER & FORM FOOTER 
+	========== */
+
+	/* 
+		The form header and footer components can be used to put some distance between the form components and their setup and submission content.
+
+			* Long Form -- https://protocol.mozilla.org/demos/forms/long.html
+			* Account Signup -- https://protocol.mozilla.org/demos/forms/accounts.html
+		
+		Tips
+			* These layout features are most useful in larger forms. If you have a small form like a login they're optional.
+	*/
+
+
+
+/* ==========
+	FIELD SETS 
+	========== */
+	
+	/* 
+		Field sets group form fields that are related thematically. Field sets will often correspond to the fieldset element but not always.
+
+		Tips
+			* if you are using legend elements add the mzp-c-form-subheading class to make them behave as expected.
+	*/
+
+
+
+/* ==========
+	MESSAGE 
+	========== */
+
+	/* 
+		More useful for supplementary error messages, not things that would need to display before user interaction.
+
+		Error messages should be short and simple. They should indicate what the user needs to do to resolve the error, not simply state that an error occurred. Bad example: “Invalid e-mail.” Good example: “Provide a complete e-mail address, like ‘yourname@example.com’.”
+
+			* Form Validation Demo -- https://protocol.mozilla.org/demos/forms/validation.html
+			* Accessible Error Messages -- https://www.levelaccess.com/how-to-provide-accessible-error-identification/
+		
+		Notes
+			* add the error class to any parent element
+			* connect the form field and the message with aria-describedby
+			* add role=tooltip to the message
+	*/

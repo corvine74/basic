@@ -1,4 +1,6 @@
 module.exports = config => {
+  // Set directories to pass through to the dist folder
+  config.addPassthroughCopy('./src/assets/');
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
@@ -7,7 +9,7 @@ module.exports = config => {
       input: 'src',
       output: '../www/site',
       includes: "site/_includes",
-      data: "src/site/_data"
+      data: "site/_data"
     }
   };
 };

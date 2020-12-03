@@ -1,0 +1,122 @@
+/* ==========
+	CARDS
+	========== */
+
+
+/* ==========
+	LARGE CARD
+	========== */
+	/* 
+		A large card with image, headline, description, and link.
+
+			* Card Layout Class -- https://protocol.mozilla.org/patterns/templates/card-layout.html
+			* Card Layout Demo -- https://protocol.mozilla.org/demos/card-layout.html
+
+			Notes
+				* Large sized cards display larger text to other card types, as well as larger images.
+				* Large sized cards should contain images with 16:9 or 3:2 aspect ratios only.
+				* Recommended image width is 930px (low-res), 1860px (high-res).
+					* high-res examples: 16:9 = 1860 x 1046, 3:2 = 1860 x 1240, 1:1 = a bad idea
+				* Headlines should be a maximum of 40 characters, and descriptions a maximum of 140 characters.
+	*/
+
+
+
+/* ==========
+	MEDIUM CARD 
+	========== */
+	/* 
+		A medium card with image, headline, description, and link. 
+
+		Notes
+			* Medium sized cards contain larger images but the same sized text as regular cards.
+			* Medium sized cards can contain images with 16:9, 3:2 or 1:1 aspect ratios.
+			* The card in this example displays an icon next to the card tag name, to indicate the media type that may be played on click.
+			* The card in this example includes an optional inline call to action. Inline CTAs should only be used with a description.
+			* Recommended image width is 600px (low-res), 1200px (high-res).
+				* high-res examples: 16:9 = 1200 x 676, 3:2 = 1200 x 800, 1:1 = 1200 x 1200
+			* Headlines should be a maximum of 40 characters, and descriptions a maximum of 140 characters.
+	*/
+
+
+
+/* ==========
+	SMALL CARD 
+	========== */
+	/* 
+		A small card with image, headline, description, and link. 
+
+		Notes
+			* Small sized cards can contain images with 16:9, 3:2 or 1:1 aspect ratios.
+			* The card in this example displays an icon next to the card tag name, to indicate the media type that may be played on click.
+			* Recommended image width is 450px width (low-res), 900px (high-res).
+				* high-res examples: 16:9 = 900 x 506, 3:2 = 900 x 600, 1:1 = 900 x 900
+			* Headlines should be a maximum of 40 characters, and descriptions a maximum of 140 characters.
+	*/
+
+
+
+/* ==========
+	EXTRA SMALL CARD 
+	========== */
+	/* 
+		An extra small card with image, headline, description, and link. 
+
+		Notes
+			* The card in this example has a slightly longer title and no description.
+			* Optional card meta data is also displayed to show the time an article was published.
+			* Extra small sized cards should contain images with either 16:9, 3:2 aspect ratios.
+			* Recommended image width is 450px width (low-res), 900px (high-res).
+				* high-res examples: 16:9 = 900 x 506, 3:2 = 900 x 600, 1:1 = 900 x 900
+			* Headlines should be a maximum of 40 characters, and descriptions a maximum of 140 characters.
+	*/
+
+
+
+/* ==========
+	FEATURE CARD 
+	========== */
+	/* 
+		A single large feature card with media, headline, description & link. 
+
+			* Feature Card Demo -- https://protocol.mozilla.org/demos/feature-card.html
+
+		Notes
+			* Feature cards have a range of different layout options, including horizontal layout classes.
+				* mzp-l-card-feature-left-half
+				* mzp-l-card-feature-right-half
+				* mzp-l-card-feature-left-third
+				* mzp-l-card-feature-right-third
+			* For dark color backgrounds, a .mzp-t-dark theme color is supported.
+	*/
+
+
+
+/* ==========
+	PICTO CARD 
+	========== */
+	/* 
+		A card with a pictographic icon, headline, and description. 
+
+			* Card Layout Classes -- https://protocol.mozilla.org/patterns/templates/card-layout.html
+			* Picto Card Layout Demo -- https://protocol.mozilla.org/demos/card-picto-layout.html
+
+		Notes
+			* This card type should be arranged in groups of two or three using the .mzp-l-card-half and .mzp-l-card-third layout classes.
+			* Icons are presentational so should be applied as CSS background images via a .mzp-c-card-picto-content::before pseudo class.
+			* Headlines should be a maximum of 30 characters, and descriptions a maximum of 60 characters.
+			* A .mzp-t-dark theme color is supported for use on different color backgrounds.
+			* Icon size is 56px x 56px.
+	*/
+
+
+
+/* ==========
+	PICTO CARD (COMPACT) 
+	========== */
+	/* 
+		A more compact version of a Picto Card with a horizontally aligned icon. 
+
+		Notes
+			* Horizontally aligned icon allows for a larger title and slightly longer description (max 100 characters).
+	*/
