@@ -4,10 +4,10 @@ module.exports = config => {
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dir: {
-      input: 'src/content',
-      output: 'dist',
-      includes: "../site/_includes",
-      data: "../site/_data"
+      input: 'src',
+      output: '../www/site',
+      includes: "site/_includes",
+      data: "src/site/_data"
     }
   };
 };
