@@ -1,12 +1,11 @@
-
-$content-xs: 304px;
-$content-sm: 432px;
-$content-md: 688px;
-$content-lg: 928px;
-$content-xl: 1152px;
-$content-max: 1440px;
-$screen-xs: 320px;
-$screen-sm: 480px;
-$screen-md: 768px;
-$screen-lg: 1024px;
-$screen-xl: 1312px;
+$content-xs:  remCalc(304);
+$content-sm:  remCalc(432);
+$content-md:  remCalc(688);
+$content-lg:  remCalc(928);
+$content-xl:  remCalc(1152);
+$content-max: remCalc(1440);
+$screen-xs:   remCalc(320);
+$screen-sm:   remCalc(480);
+$screen-md:   remCalc(768);
+$screen-lg:   remCalc(1024);
+$screen-xl:   remCalc(1312);

@@ -1,14 +1,13 @@
-
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xl: 32px;
-$spacing-2xl: 48px;
-$layout-2xs: 16px;
-$layout-xs: 24px;
-$layout-sm: 32px;
-$layout-md: 48px;
-$layout-lg: 64px;
-$layout-xl: 96px;
-$layout-2xl: 192px;
+$spacing-xs:  remCalc(4);
+$spacing-sm:  remCalc(8);
+$spacing-md:  $trex-base-size;
+$spacing-lg:  remCalc(24);
+$spacing-xl:  remCalc(32);
+$spacing-2xl: remCalc(48);
+$layout-2xs:  $trex-base-size;
+$layout-xs:   remCalc(24);
+$layout-sm:   remCalc(32);
+$layout-md:   remCalc(48);
+$layout-lg:   remCalc(64);
+$layout-xl:   remCalc(96);
+$layout-2xl:  remCalc(192);
