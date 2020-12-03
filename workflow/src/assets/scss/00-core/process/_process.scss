@@ -1,11 +1,14 @@
 @import 'libs/cycle';
 
-/// Only run if there should be an output
+/* 
+  Only run if there should be an output
+*/
+
 @if ($outputTokenCSS == true) {
-  /// Run the standard cycle first
+  /// standard cycle
   @include cycle('', false);
 
-  /// For each breakpoint, generate a prefix and run the cycle
+  /// for each breakpoint, generate a prefix and run the cycle
   @each $key, $value in map-get($trex-config, 'breakpoints') {
     $prefix: #{$key + '\\:'};
     $is-breakpoint: true;
