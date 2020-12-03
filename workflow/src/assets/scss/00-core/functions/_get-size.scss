@@ -6,13 +6,13 @@
 /// @param {string} $ratio-key - The size ratio that you want to get
 ///
 @function get-size($ratio-key) {
-  $response: map-get($gorko-size-scale, $ratio-key);
+  $response: map-get($trex-scale, $ratio-key);
 
   @if ($response) {
     @return $response;
   }
 
-  @warn #{'Size "' + $ratio-key + '" not found in $gorko-size-scale'};
+  @warn #{'Size "' + $ratio-key + '" not found in $trex-scale'};
 
   @return null;
 }

@@ -4,14 +4,90 @@
 ///
 /// @param {string} $key - The color that you want to get
 ///
-@function get-color($key) {
-  $response: map-get($gorko-colors, $key);
 
-  @if ($response) {
-    @return $response;
+
+/* ========================================
+  COLOR PALETTE
+  ========================================= */
+
+/*
+  This is a color palette builder which uses defined color tokens. This eliminates the need to define color shades within the color tokens.
+*/
+
+@import '../tokens/color.scss';
+
+
+/*
+  Create shades of each color and return values as a map
+*/  
+
+@function color-map($color, $values) {
+  $base:      $values;
+  $l50:  mix(white, $values, 99%);
+  $l100: mix(white, $values, 88%);
+  $l200: mix(white, $values, 77%);
+  $l300: mix(white, $values, 66%);
+  $l400: mix(white, $values, 55%);
+  $l500: mix(white, $values, 44%);
+  $l600: mix(white, $values, 33%);
+  $l700: mix(white, $values, 22%);
+  $l800: mix(white, $values, 11%);
+  $d50:  mix(black, $values, 11%);
+  $d100: mix(black, $values, 22%);
+  $d200: mix(black, $values, 33%);
+  $d300: mix(black, $values, 44%);
+  $d400: mix(black, $values, 55%);
+  $d500: mix(black, $values, 66%);
+  $d600: mix(black, $values, 77%);
+  $d700: mix(black, $values, 88%);
+  $d800: mix(black, $values, 99%);
+
+  $color-shades: (
+    #{$color}#{5}:  $l50,
+    #{$color}#{10}: $l100,
+    #{$color}#{15}: $l200,
+    #{$color}#{20}: $l300,
+    #{$color}#{25}: $l400,
+    #{$color}#{30}: $l500,
+    #{$color}#{35}: $l600,
+    #{$color}#{40}: $l700,
+    #{$color}#{45}: $l800,
+    #{$color}#{50}:  $d50,
+    #{$color}#{55}: $d100,
+    #{$color}#{60}: $d200,
+    #{$color}#{65}: $d300,
+    #{$color}#{70}: $d400,
+    #{$color}#{75}: $d500,
+    #{$color}#{80}: $d600,
+    #{$color}#{85}: $d700,
+    #{$color}#{90}: $d800
+  );
+
+  @return $color-shades;
+}
+
+/*
+  Set up master map for all colors
+*/ 
+@function color-maps($colors) {
+  $color-map: ();
+
+  @each $color, $value in $colors {
+    $map: (color-map($color, $value));
+    $color-map: map-merge($color-map, $map);
   }
 
-  @warn #{'Color "' + $key + '" not found in $gorko-colors'};
+  @return $color-map;
+}
 
-  @return null;
+/*
+  Initiate maps function to build maps
+*/ 
+$color-map: color-maps($colors);
+
+/*
+  Function to better call colors from map
+*/  
+@function trex-color($color, $shade) {
+  @return map-get($color-map, #{$color}#{$shade});
 }

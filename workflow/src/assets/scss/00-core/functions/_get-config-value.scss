@@ -5,7 +5,7 @@
 /// @param {string} $group - The group within $gorko-config where that $key lives
 ///
 @function get-config-value($key, $group) {
-  $group-items: map-get($gorko-config, $group);
+  $group-items: map-get($trex-config, $group);
 
   @if ($group-items) {
     @return map-get(map-get($group-items, 'items'), $key);

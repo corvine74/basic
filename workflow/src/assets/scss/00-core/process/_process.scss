@@ -6,7 +6,7 @@
   @include cycle('', false);
 
   /// For each breakpoint, generate a prefix and run the cycle
-  @each $key, $value in map-get($gorko-config, 'breakpoints') {
+  @each $key, $value in map-get($trex-config, 'breakpoints') {
     $prefix: #{$key + '\\:'};
     $is-breakpoint: true;
 

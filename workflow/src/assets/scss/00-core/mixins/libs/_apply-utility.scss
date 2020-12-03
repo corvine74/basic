@@ -6,7 +6,7 @@
 /// @param {string} $value-key - The value key that you are looking for within the utilty
 ///
 @mixin apply-utility($key, $value-key) {
-  $utility: map-get($gorko-config, $key);
+  $utility: map-get($trex-config, $key);
   $property: map-get($utility, 'property');
   $items: map-get($utility, 'items');
   $item-value: map-get($items, $value-key);

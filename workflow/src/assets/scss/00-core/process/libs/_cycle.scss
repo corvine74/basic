@@ -8,7 +8,7 @@
 @import 'process-collection';
 
 @mixin cycle($prefix, $is-breakpoint) {
-  @each $selector, $props in $gorko-config {
+  @each $selector, $props in $trex-config {
     @include process-collection($props, $prefix, $selector, $is-breakpoint);
   }
 }
