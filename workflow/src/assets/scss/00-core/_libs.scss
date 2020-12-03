@@ -1,10 +1,11 @@
-/// Import the default config as the fallback for if
-/// the user hasn't yet set a config for their project
+/* ========================================
+  BASE CONFIGURATION IMPORTS
+  ========================================= */
+
 @import 'tokens/config';
 
-/// Set default feature flags
 $outputTokenCSS: true !default;
 
 @import 'functions';
 @import 'mixins';
-@import 'process';
+@import 'process/process';
